@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\routes.tsx" />
     <None Remove="ClientApp\redux\epics\index.ts" />
     <None Remove="ClientApp\redux\reducers\index.ts" />
     <None Remove="ClientApp\redux\stores\index.ts" />
@@ -32,10 +33,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\constants\index.ts" />
     <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\utils\index.jsx" Link="index.jsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\routes.tsx" />
     <TypeScriptCompile Include="ClientApp\redux\epics\index.ts" />
     <TypeScriptCompile Include="ClientApp\redux\reducers\index.ts" />
     <TypeScriptCompile Include="ClientApp\redux\stores\index.ts" />
