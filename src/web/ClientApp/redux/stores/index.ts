@@ -14,8 +14,8 @@ import {
 
 //import * as StoreModule from './store';
 //import { ApplicationState, reducers } from './store';
-import epic from 'Epics';
-import reducer from 'Reducers';
+import epic from "Epics/index.ts";
+import reducer from 'Reducers/index.ts';
 
 import CalendarStore, { ICalendar } from './Calendar';
 
@@ -36,7 +36,7 @@ export default (history: History, initialState?: IApplicationState) => {
     // If devTools is installed, connect to it
     const devToolsExtension = windowIfDefined && windowIfDefined.devToolsExtension as () => GenericStoreEnhancer;
 
-    const createStoreWithMiddleware = compose(
+    const createStoreWithMiddleware = (reducer: any, state?: IApplicationState) => compose(
         applyMiddleware(
             createEpicMiddleware(epic),
             routerMiddleware(history)

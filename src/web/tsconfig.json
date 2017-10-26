@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./",
     "module": "es2015",
     "moduleResolution": "node",
     "target": "es5",
@@ -10,10 +10,21 @@
     "skipDefaultLibCheck": true,
     "strict": true,
     "lib": ["es6", "dom"],
-    "types": ["webpack-env"]
+    "types": [ "webpack-env" ],
+    "paths": {
+        "Assets/*": [ "ClientApp/assets/*" ],
+        "ClientApp/*": [ "ClientApp/*" ],
+        "Components/*": [ "ClientApp/components/*" ],
+        "Constants/*": [ "ClientApp/constants/*" ],
+        "Epics/*": [ "ClientApp/redux/epics/*" ],
+        "Reducers/*": [ "ClientApp/redux/reducers/*" ],
+        "Redux/*": [ "ClientApp/redux/*" ],
+        "Stores/*": [ "ClientApp/redux/stores/*" ],
+        "Utils/*": [ "ClientApp/utils/*" ]
+    }
   },
-  "exclude": [
-      "bin",
-      "node_modules"
-  ]
+    "exclude": [
+        "bin",
+        "node_modules"
+    ]
 }
