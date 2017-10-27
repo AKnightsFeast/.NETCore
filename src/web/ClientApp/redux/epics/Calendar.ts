@@ -6,8 +6,8 @@ import "rxjs/add/operator/switchMap";
 import { Observable } from "rxjs/Observable";
 
 import { GetTuesdays } from 'Utils';
-import { LOAD_MENUS, LOAD_DAYS, SHOW_MENU } from 'Constants';
-import { ShowMenusForDate, ShowDaysForDate, ShowMenu, LoadMenusErr } from 'Reducers';
+import { LOAD_MENUS, LOAD_DAYS, SHOW_MENU } from 'Constants/Calendar';
+import { ShowMenusForDate, ShowDaysForDate, ShowMenu, LoadMenusErr } from 'Reducers/Calendar';
 
 const menus = [
     {

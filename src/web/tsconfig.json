@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
     "module": "es2015",
     "moduleResolution": "node",
     "target": "es5",
@@ -11,16 +10,20 @@
     "strict": true,
     "lib": ["es6", "dom"],
     "types": [ "webpack-env" ],
+    "baseUrl": "./ClientApp/",
     "paths": {
-        "Assets/*": [ "ClientApp/assets/*" ],
-        "ClientApp/*": [ "ClientApp/*" ],
-        "Components/*": [ "ClientApp/components/*" ],
-        "Constants/*": [ "ClientApp/constants/*" ],
-        "Epics/*": [ "ClientApp/redux/epics/*" ],
-        "Reducers/*": [ "ClientApp/redux/reducers/*" ],
-        "Redux/*": [ "ClientApp/redux/*" ],
-        "Stores/*": [ "ClientApp/redux/stores/*" ],
-        "Utils/*": [ "ClientApp/utils/*" ]
+        "Assets/*": [ "assets/*" ],
+        //"ClientApp/*": [ "ClientApp/*" ],
+        "Components/*": [ "components/*" ],
+        "Constants/*": [ "constants/*" ],
+        "Epics": [ "redux/epics" ],
+        "Layouts/*": [ "components/layouts/*" ],
+        "Reducers": [ "redux/reducers" ],
+        "Reducers/*": [ "redux/reducers/*" ],
+        "Redux/*": [ "redux/*" ],
+        "Stores": [ "redux/stores" ],
+        "Stores/*": [ "redux/stores/*" ],
+        "Utils": [ "utils" ]
     }
   },
     "exclude": [

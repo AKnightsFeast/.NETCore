@@ -14,8 +14,8 @@ import {
 
 //import * as StoreModule from './store';
 //import { ApplicationState, reducers } from './store';
-import epic from "Epics/index.ts";
-import reducer from 'Reducers/index.ts';
+import epic from "Epics";
+import reducer from 'Reducers';
 
 import CalendarStore, { ICalendar } from './Calendar';
 

@@ -11,10 +11,10 @@ import Menu from './Menu';
 import DayPicker from './DayPicker';
 import MenuPicker from './MenuPicker';
 import MonthYearPicker from './MonthYearPicker';
-import { LoadDaysForDate, LoadMenusForDate, ShowMenu } from 'Reducers/Calendar';
+import { LoadDaysForDate, LoadMenusForDate, ShowMenu } from "Reducers/Calendar";
 
 import { IMenu } from 'Stores/Calendar';
-import { MonthArray, YearArray, GetFormattedDate, ITuesday  } from 'Utils';
+import { MonthArray, YearArray, GetFormattedDate, ITuesday  } from "Utils";
 
 /*
 const DateButton = ({ onClick, icon }) => <i onClick={ onClick } className='material-icons'>{ icon }</i>
@@ -83,7 +83,7 @@ export default compose(
         }),
         dispatch => ({
             OnDateChange: (month: number, year: number) => { dispatch(LoadDaysForDate(month, year)) },
-            OnDayChange: (date: string) => { dispatch(LoadMenusForDate(date)); },
+            OnDayChange: (date: Date) => { dispatch(LoadMenusForDate(date)); },
             OnMenuChange: (menu: string) => { dispatch(ShowMenu(menu)) }
         })
     )

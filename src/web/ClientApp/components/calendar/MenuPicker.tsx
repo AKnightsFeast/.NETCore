@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { SFC } from 'react';
-import { BindClosures, IMenu } from 'Utils';
+import { BindClosures } from 'Utils';
+import { IMenu } from 'Stores/Calendar';
 
 interface IMenuPickerProps {
     menus: IMenu[],
@@ -29,13 +29,13 @@ const MenuItem = BindClosures({
 
 export default (props: IMenuPickerProps) => 
     <ul>
-    {
-        props.menus.map((menu: IMenu, index: number) =>
-            <MenuItem key={ index }
-                      menu={ menu }
-                      id={ "menu" + index }
-                      label={ menu.title }
-                      OnMenuChange={ props.OnMenuChange } />
-        )
-    }
+        {
+            props.menus.map((menu: IMenu, index: number) =>
+                <MenuItem key={index}
+                    menu={menu}
+                    id={"menu" + index}
+                    label={menu.title}
+                    OnMenuChange={props.OnMenuChange} />
+            )
+        }
     </ul>

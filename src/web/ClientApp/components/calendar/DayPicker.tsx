@@ -31,21 +31,18 @@ const DayItem = BindClosures({
     )
 );
 
-export default (props: IDayPickerProps) => {
-    return (
-        <ul>
+export default (props: IDayPickerProps) =>
+    <ul>
         {
             props.days.map((day: ITuesday, index: number) => {
                 return (
-                    <DayItem key={ index }
-                             id={ "d" + index }
-                             attr={ day.attr }
-                             date={ day.date }
-                             label={ day.label }
-                             OnDayChange={ props.OnDayChange } />
+                    <DayItem key={index}
+                             id={"d" + index}
+                             attr={day.attr}
+                             date={day.date}
+                             label={day.label}
+                             OnDayChange={props.OnDayChange} />
                 );
             })
         }
-        </ul>
-    );
-};
+    </ul>;
