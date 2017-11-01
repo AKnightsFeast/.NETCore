@@ -18,6 +18,8 @@
         "Constants/*": [ "constants/*" ],
         "Epics": [ "redux/epics" ],
         "Layouts/*": [ "components/layouts/*" ],
+        "Menus": [ "components/menus" ],
+        "Menus/*": [ "components/menus/*" ],
         "Reducers": [ "redux/reducers" ],
         "Reducers/*": [ "redux/reducers/*" ],
         "Redux/*": [ "redux/*" ],

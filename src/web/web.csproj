@@ -17,20 +17,26 @@
 
   <ItemGroup>
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Compile Remove="ClientApp\components\freezer\**" />
+    <Compile Remove="ClientApp\components\personal\**" />
+    <Content Remove="ClientApp\components\freezer\**" />
+    <Content Remove="ClientApp\components\personal\**" />
     <Content Remove="ClientApp_default\**" />
+    <EmbeddedResource Remove="ClientApp\components\freezer\**" />
+    <EmbeddedResource Remove="ClientApp\components\personal\**" />
+    <None Remove="ClientApp\components\freezer\**" />
+    <None Remove="ClientApp\components\personal\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="ClientApp\components\about\index.tsx" />
-    <None Remove="ClientApp\components\freezer\index.tsx" />
     <None Remove="ClientApp\components\friends\index.tsx" />
     <None Remove="ClientApp\components\giftcertificates\index.tsx" />
     <None Remove="ClientApp\components\home\index.tsx" />
-    <None Remove="ClientApp\components\personal\index.tsx" />
+    <None Remove="ClientApp\components\menus\themed.tsx" />
     <None Remove="ClientApp\components\policies\index.tsx" />
     <None Remove="ClientApp\components\routes.tsx" />
     <None Remove="ClientApp\components\testimonials\index.tsx" />
-    <None Remove="ClientApp\components\themed\index.tsx" />
     <None Remove="ClientApp\redux\epics\index.ts" />
     <None Remove="ClientApp\redux\reducers\index.ts" />
     <None Remove="ClientApp\redux\stores\index.ts" />
@@ -47,15 +53,13 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\components\about\index.tsx" />
-    <TypeScriptCompile Include="ClientApp\components\freezer\index.tsx" />
     <TypeScriptCompile Include="ClientApp\components\friends\index.tsx" />
     <TypeScriptCompile Include="ClientApp\components\giftcertificates\index.tsx" />
     <TypeScriptCompile Include="ClientApp\components\home\index.tsx" />
-    <TypeScriptCompile Include="ClientApp\components\personal\index.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\menus\themed.tsx" />
     <TypeScriptCompile Include="ClientApp\components\policies\index.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Routes.tsx" />
     <TypeScriptCompile Include="ClientApp\components\testimonials\index.tsx" />
-    <TypeScriptCompile Include="ClientApp\components\themed\index.tsx" />
     <TypeScriptCompile Include="ClientApp\redux\epics\index.ts" />
     <TypeScriptCompile Include="ClientApp\redux\reducers\index.ts" />
     <TypeScriptCompile Include="ClientApp\redux\stores\index.ts" />

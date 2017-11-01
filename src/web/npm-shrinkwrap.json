@@ -10,9 +10,9 @@
       "integrity": "sha512-Z8DQIdWtl0ff+tXDKeG3P0IOXd0kCI5wCXqZZjymjwcwe/o46BlEXeDrN09L9qnhzHmo9ObpkrlMCHPfbVvewA=="
     },
     "@types/jquery": {
-      "version": "3.2.15",
-      "resolved": "https://registry.npmjs.org/@types/jquery/-/jquery-3.2.15.tgz",
-      "integrity": "sha512-SmiwGv/ISoltkDMngZ8sb9ijj6mYx3084XkHul/U4r03N2C14j6F+Lx+RfZ/f5zGOVOKEUIrRLVCNFKEaVDABQ=="
+      "version": "3.2.16",
+      "resolved": "https://registry.npmjs.org/@types/jquery/-/jquery-3.2.16.tgz",
+      "integrity": "sha512-q2WC02YxQoX2nY1HRKlYGHpGP1saPmD7GN0pwCDlTz35a4eOtJG+aHRlXyjCuXokUukSrR2aXyBhSW3j+jPc0A=="
     },
     "@types/node": {
       "version": "8.0.7",
@@ -20,9 +20,9 @@
       "integrity": "sha1-+wrQS1tvbqvgNyoyqPH7ulwTDK4="
     },
     "@types/react": {
-      "version": "16.0.18",
-      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.0.18.tgz",
-      "integrity": "sha512-cUe8Dj0K0I826OLeC2BUsWa3DaGgRR2KaslmEI8R3Ma46dc52hqKIqC4iPQ30Jncz39E7JAytmxweUsu53QHZw=="
+      "version": "16.0.19",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-16.0.19.tgz",
+      "integrity": "sha512-0M27ZfEYJhQYJ+uYouV7Bd70eNOCp8OxWUSc+etg33lb8Jq7rTmvBKIWUQwx+HquSsNqlk+5PAcmNTTxJKYUsg=="
     },
     "@types/react-dom": {
       "version": "16.0.2",
@@ -30,7 +30,7 @@
       "integrity": "sha512-P+S4FYX49Rim9wSuKy+UoVgmWaUvl7fz4ut3GsWF2Fq93A0XpwYg+U0PTd+Zu8g7G2gPzOqWePgsElLxM4FJjQ==",
       "requires": {
         "@types/node": "8.0.7",
-        "@types/react": "16.0.18"
+        "@types/react": "16.0.19"
       }
     },
     "@types/react-hot-loader": {
@@ -39,16 +39,16 @@
       "integrity": "sha512-KL0OLo1158WBWv+QoP9Z9f+MupiM9DpwJST52D0AyxUpXFmyzV1VskwRp+RZsnZemMcAPoyBy8od44HuJtuVwQ==",
       "dev": true,
       "requires": {
-        "@types/react": "16.0.18"
+        "@types/react": "16.0.19"
       }
     },
     "@types/react-redux": {
-      "version": "5.0.11",
-      "resolved": "https://registry.npmjs.org/@types/react-redux/-/react-redux-5.0.11.tgz",
-      "integrity": "sha512-onugzQGhohicl5dOBF4yeU+2uqBSL7hEyTEOd71t/QawpvaAFRv4ML1jhqaxSGnnLVG8BudmoKdsj7UVYnsP5w==",
+      "version": "5.0.12",
+      "resolved": "https://registry.npmjs.org/@types/react-redux/-/react-redux-5.0.12.tgz",
+      "integrity": "sha512-KzuglGA/Z51Dt+kGQQJproZMMp3uqc5gCHruWDQYr7hffuV6Liod2uyEsZW2HTp3/Tpf03jcFF0Hmec1dF9WFw==",
       "dev": true,
       "requires": {
-        "@types/react": "16.0.18",
+        "@types/react": "16.0.19",
         "redux": "3.7.2"
       }
     },
@@ -58,16 +58,16 @@
       "integrity": "sha512-SPs2qmry3gnPXxRrnWFuipv5qxcISz0Msk/2qWemvDW0DSukElvCdeMc6I3AuTkeZoLxlgNm2yKRJoJEE3PxtQ==",
       "requires": {
         "@types/history": "4.6.1",
-        "@types/react": "16.0.18"
+        "@types/react": "16.0.19"
       }
     },
     "@types/react-router-dom": {
-      "version": "4.0.8",
-      "resolved": "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-4.0.8.tgz",
-      "integrity": "sha512-+Ipm4f9eNhzu4PKoQIqrj+VMiYWLFb1UXWOpx5z1CmSoVIdA0x703aUuRPncC1o9KKcuwr3bj1tEIzg1I/vhAg==",
+      "version": "4.2.0",
+      "resolved": "https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-4.2.0.tgz",
+      "integrity": "sha512-q4Wed56xsMSYOYa8IXW/SHJ6GqKE1nGSvcm8ZNzesQPIObyoFhLDUwzF88aJTVLDvlW0+YB4sf5E0H7AZY5LHA==",
       "requires": {
         "@types/history": "4.6.1",
-        "@types/react": "16.0.18",
+        "@types/react": "16.0.19",
         "@types/react-router": "4.0.16"
       }
     },
@@ -94,7 +94,7 @@
       "resolved": "https://registry.npmjs.org/@types/recompose/-/recompose-0.24.2.tgz",
       "integrity": "sha512-beZwUsopfybRgUdY9VChys69UCkylAOFnDuxs3aqNPw/U+ANDfdauFrkUNSW10AbRb4ylDu3P1X0NjqTUDHK2A==",
       "requires": {
-        "@types/react": "16.0.18"
+        "@types/react": "16.0.19"
       }
     },
     "@types/source-map": {
@@ -1092,6 +1092,15 @@
         "utils-merge": "1.0.0"
       }
     },
+    "connected-react-router": {
+      "version": "4.2.3",
+      "resolved": "https://registry.npmjs.org/connected-react-router/-/connected-react-router-4.2.3.tgz",
+      "integrity": "sha1-cGan+D2khN36nDU5A6awfRnL6eE=",
+      "requires": {
+        "immutable": "3.8.2",
+        "react-router": "4.2.0"
+      }
+    },
     "console-browserify": {
       "version": "1.1.0",
       "resolved": "https://registry.npmjs.org/console-browserify/-/console-browserify-1.1.0.tgz",
@@ -2046,6 +2055,11 @@
       "resolved": "https://registry.npmjs.org/ieee754/-/ieee754-1.1.8.tgz",
       "integrity": "sha1-vjPUCsEO8ZJnAfbwii2G+/0a0+Q=",
       "dev": true
+    },
+    "immutable": {
+      "version": "3.8.2",
+      "resolved": "https://registry.npmjs.org/immutable/-/immutable-3.8.2.tgz",
+      "integrity": "sha1-wkOZUUVbs5kT2vKBN28VMOEErfM="
     },
     "indexes-of": {
       "version": "1.0.1",

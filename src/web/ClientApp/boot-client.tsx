@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { createBrowserHistory, History } from 'history';
 import { AppContainer } from 'react-hot-loader';
-import { ConnectedRouter } from 'react-router-redux';
+import { createBrowserHistory, History } from 'history';
+//import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'connected-react-router';
 
 import Routes from 'Components/routes';
 import CreateStore, { IApplicationState } from 'Stores';

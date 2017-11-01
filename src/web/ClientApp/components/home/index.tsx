@@ -1,12 +1,8 @@
-﻿// A '.tsx' file enables JSX support in the TypeScript compiler, 
-// for more information see the following page on the TypeScript wiki:
-// https://github.com/Microsoft/TypeScript/wiki/JSX
-import * as React from 'react';
+﻿import * as React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 export default () =>
     <div>
-
         <div className="cover">
             <div className="container">
                 <div className="content section no-pad-bot">
