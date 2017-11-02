@@ -19,12 +19,13 @@ module.exports = (env) => {
         },
         module: {
             rules: [
-                { test: /\.tsx?$/, include: SRC_DIR, use: 'awesome-typescript-loader?silent=true' },
+                { test: /\.tsx?$/, include: SRC_DIR, use: 'awesome-typescript-loader'/*?silent=true*/ },
                 { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
             ]
         },
         resolve: {
-            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            extensions: ['.js', '.jsx', '.ts', '.tsx']//,
+            /*
             alias: {
                 Utils: path.resolve(SRC_DIR, 'utils'),
                 Assets: path.resolve(SRC_DIR, "assets"),
@@ -34,6 +35,7 @@ module.exports = (env) => {
                 Stores: path.resolve(SRC_DIR, 'redux', 'stores'),
                 Reducers: path.resolve(SRC_DIR, 'redux', 'reducers')
             }
+            */
         },
         plugins: [new CheckerPlugin()]
     });
@@ -42,12 +44,12 @@ module.exports = (env) => {
     const clientBundleOutputDir = './wwwroot/dist';
     const clientBundleConfig = merge(sharedConfig(), {
         entry: { 'main-client': './ClientApp/boot-client.tsx' },
+        output: { path: path.join(__dirname, clientBundleOutputDir) },
         module: {
             rules: [
                 { test: /\.css$/, use: ExtractTextPlugin.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) }
             ]
         },
-        output: { path: path.join(__dirname, clientBundleOutputDir) },
         plugins: [
             new ExtractTextPlugin('site.css'),
             new webpack.DllReferencePlugin({

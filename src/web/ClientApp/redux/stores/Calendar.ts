@@ -31,6 +31,6 @@ export default {
     selectedmenu: { },
     selectedyear: todaysYear,
     selectedmonth: todaysMonth,
-    days: GetTuesdays(todaysMonth, todaysYear),
+    days: GetTuesdays(todaysMonth.toString(), todaysYear),
     selecteddate: new Date(todaysYear, todaysMonth, todaysDate.getDate())
 } as ICalendar;

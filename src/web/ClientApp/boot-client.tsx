@@ -28,7 +28,7 @@ const RenderApp = () =>
                 <ConnectedRouter history={browserHistory} children={hotRoutes} />
             </Provider>
         </AppContainer>,
-        document.getElementById('react-app')
+        document.getElementById('root')
     );
 
 RenderApp();

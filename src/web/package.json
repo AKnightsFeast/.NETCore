@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
+    "@types/create-react-class": "^15.6.0",
     "@types/history": "^4.6.1",
     "@types/jquery": "^3.2.16",
     "@types/react-dom": "^16.0.2",

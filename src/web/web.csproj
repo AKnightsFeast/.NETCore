@@ -19,13 +19,16 @@
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Compile Remove="ClientApp\components\freezer\**" />
     <Compile Remove="ClientApp\components\personal\**" />
+    <Compile Remove="ClientApp_default\**" />
     <Content Remove="ClientApp\components\freezer\**" />
     <Content Remove="ClientApp\components\personal\**" />
     <Content Remove="ClientApp_default\**" />
     <EmbeddedResource Remove="ClientApp\components\freezer\**" />
     <EmbeddedResource Remove="ClientApp\components\personal\**" />
+    <EmbeddedResource Remove="ClientApp_default\**" />
     <None Remove="ClientApp\components\freezer\**" />
     <None Remove="ClientApp\components\personal\**" />
+    <None Remove="ClientApp_default\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,11 +47,6 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\components\assessment\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\constants\index.ts" />
-    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\utils\index.jsx" Link="index.jsx" />
   </ItemGroup>
 
   <ItemGroup>

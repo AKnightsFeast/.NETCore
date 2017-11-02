@@ -1,0 +1,11 @@
+C:\AppDev\A Knight's Feast\core\src\web\bin\Debug\netcoreapp2.0\web.deps.json
+C:\AppDev\A Knight's Feast\core\src\web\bin\Debug\netcoreapp2.0\web.runtimeconfig.json
+C:\AppDev\A Knight's Feast\core\src\web\bin\Debug\netcoreapp2.0\web.runtimeconfig.dev.json
+C:\AppDev\A Knight's Feast\core\src\web\bin\Debug\netcoreapp2.0\web.dll
+C:\AppDev\A Knight's Feast\core\src\web\bin\Debug\netcoreapp2.0\web.pdb
+C:\AppDev\A Knight's Feast\core\src\web\obj\Debug\netcoreapp2.0\web.csprojResolveAssemblyReference.cache
+C:\AppDev\A Knight's Feast\core\src\web\obj\Debug\netcoreapp2.0\web.csproj.CoreCompileInputs.cache
+C:\AppDev\A Knight's Feast\core\src\web\obj\Debug\netcoreapp2.0\web.AssemblyInfoInputs.cache
+C:\AppDev\A Knight's Feast\core\src\web\obj\Debug\netcoreapp2.0\web.AssemblyInfo.cs
+C:\AppDev\A Knight's Feast\core\src\web\obj\Debug\netcoreapp2.0\web.dll
+C:\AppDev\A Knight's Feast\core\src\web\obj\Debug\netcoreapp2.0\web.pdb

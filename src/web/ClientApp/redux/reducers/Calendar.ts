@@ -5,7 +5,7 @@ import {
     LOAD_MENUS,
     SHOW_MENUS,
     LOAD_MENUS_ERR
-} from 'Constants';
+} from 'Constants/Calendar';
 
 import { CreateReducer, ITuesday } from 'Utils';
 import { IMenu } from 'Stores/Calendar';

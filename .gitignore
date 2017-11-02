@@ -2,3 +2,4 @@ node_modules/
 bin/ 
 .git 
 .vs 
+/src/web/ClientApp/dist

@@ -260,24 +260,22 @@ export default (props: any) =>
 	    </footer>
     </div>
 
-	@Scripts.Render("~/bundles/jquery")
-	@Scripts.Render("~/bundles/materialize")
+	//@Scripts.Render("~/bundles/jquery")
+	//@Scripts.Render("~/bundles/materialize")
 
-	<script type="text/javascript">
-		$(function () {
-			$window = $(window);
+	$(function () {
+		let $window = $(window);
 
-			$("a#scrolltop").click(function () {
-				$window.scrollTop(0);
-			});
-
-			$('.sidenav-activator').sideNav({
-				menuWidth: 300, // Default is 300
-				edge: 'right', // Choose the horizontal origin
-				closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-				draggable: true // Choose whether you can drag to open on touch screens
-			});
+		$("a#scrolltop").click(function () {
+			$window.scrollTop(0);
 		});
-	</script>
 
-@RenderSection("scripts", required: false)
+		$('.sidenav-activator').sideNav({
+			menuWidth: 300, // Default is 300
+			edge: 'right', // Choose the horizontal origin
+			closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+			draggable: true // Choose whether you can drag to open on touch screens
+		});
+	});
+
+//@RenderSection("scripts", required: false)

@@ -81,7 +81,7 @@ export default () =>
                     </div>
                 </div>
             </div>
-            <div className="parallax"><img src="/Images/bgcands.jpg"></div>
+            <div className="parallax"><img src="/Images/bgcands.jpg" /></div>
         </div>
 
         { /* How it Works */ }
@@ -195,7 +195,7 @@ export default () =>
                     </div>
                 </div>
             </div>
-            <div className="parallax"><img src="/Images/bgfishstew.jpg"></div>
+            <div className="parallax"><img src="/Images/bgfishstew.jpg" /></div>
         </div>
 
         <div className="divider"></div>

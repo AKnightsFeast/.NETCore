@@ -12,12 +12,10 @@ import {
     StoreEnhancerStoreCreator
 } from 'redux';
 
-//import * as StoreModule from './store';
-//import { ApplicationState, reducers } from './store';
 import epic from "Epics";
 import reducer from 'Reducers';
 
-import CalendarStore, { ICalendar } from './Calendar';
+import initialCalendarStore, { ICalendar } from './Calendar';
 
 export interface IApplicationState
 {
@@ -29,7 +27,13 @@ function buildRootReducer(allReducers: ReducersMapObject) {
     return combineReducers<IApplicationState>(Object.assign({}, reducer, { routing: routerReducer }));
 }
 
-export default (history: History, initialState?: IApplicationState) => {
+export default (history: any, initialState?: IApplicationState) => {
+    if (initialState == null)
+        initialState = {
+            assessment: {},
+            monthlymenu: initialCalendarStore
+        } as IApplicationState;
+
     // Build middleware. These are functions that can process the actions before they reach the store.
     const windowIfDefined = typeof window === 'undefined' ? null : window as any;
 
@@ -48,9 +52,9 @@ export default (history: History, initialState?: IApplicationState) => {
 
     // Enable Webpack hot module replacement for reducers
     if (module.hot) {
-        module.hot.accept('./store', () => {
-            const nextRootReducer = require<typeof StoreModule>('./store');
-            enhancedStore.replaceReducer(buildRootReducer(nextRootReducer.reducers));
+        module.hot.accept('Reducers', () => {
+            const nextRootReducer = require<ReducersMapObject>('Reducers');
+            enhancedStore.replaceReducer(buildRootReducer(nextRootReducer));
         });
     }
 

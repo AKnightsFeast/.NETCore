@@ -20,8 +20,7 @@ import { MonthArray, YearArray, GetFormattedDate, ITuesday  } from "Utils";
 const DateButton = ({ onClick, icon }) => <i onClick={ onClick } className='material-icons'>{ icon }</i>
 */
 
-interface ICalendarProps
-{
+const Calendar = (props: {
     menus: IMenu[],
     days: ITuesday[],
     selecteddate: Date,
@@ -31,9 +30,7 @@ interface ICalendarProps
     OnDayChange: (date: string) => void,
     OnMenuChange: (menu: string) => void,
     OnDateChange: (month: number, year: number) => void
-}
-
-const Calendar = (props: ICalendarProps) =>
+}) =>
     <div id="MonthlyMenus">
         <div className="row">
             <div className="col s12 m3">

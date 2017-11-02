@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { createReactClass } from 'create-react-class';
+
+const createReactClass = require('create-react-class');
 
 interface IDateFormat {
     month: string,
