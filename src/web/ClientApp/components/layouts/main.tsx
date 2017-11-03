@@ -1,12 +1,11 @@
-﻿// A '.tsx' file enables JSX support in the TypeScript compiler, 
-// for more information see the following page on the TypeScript wiki:
-// https://github.com/Microsoft/TypeScript/wiki/JSX
-
-import * as React from 'react';
+﻿import * as React from 'react';
+import { compose, lifecycle } from 'recompose';
 import { NavLink, Link } from 'react-router-dom';
-import * as $ from 'jquery';
 
-export default (props: any) =>
+import * as $ from 'jquery';
+import 'materialize-css';
+
+const Main = (props: any) =>
     <div>
 	    <div id="headernav" className="navbar-fixed">
 		    <nav className="white" role="navigation">
@@ -124,9 +123,7 @@ export default (props: any) =>
 								      id="path22" />
 						    </g>
 					    </svg>
-					    <span className="navlogotxt pink-text darken-4">
-						    A Knight's Feast
-					    </span>
+					    <span className="navlogotxt pink-text darken-4">A Knight's Feast</span>
 				    </Link>
 				    <ul id="slide-out" className="side-nav collapsible pink">
 					    <li title="See Chef Laura's Menus'">
@@ -260,22 +257,22 @@ export default (props: any) =>
 	    </footer>
     </div>
 
-	//@Scripts.Render("~/bundles/jquery")
-	//@Scripts.Render("~/bundles/materialize")
+export default compose(
+    lifecycle({
+        componentDidMount: () => {
+            let $window = $(window);
 
-	$(function () {
-		let $window = $(window);
+            $("a#scrolltop").click(function () {
+                $window.scrollTop(0);
+            });
 
-		$("a#scrolltop").click(function () {
-			$window.scrollTop(0);
-		});
-
-		$('.sidenav-activator').sideNav({
-			menuWidth: 300, // Default is 300
-			edge: 'right', // Choose the horizontal origin
-			closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-			draggable: true // Choose whether you can drag to open on touch screens
-		});
-	});
-
-//@RenderSection("scripts", required: false)
+            $('.sidenav-activator').sideNav({
+                menuWidth: 300, // Default is 300
+                edge: 'right', // Choose the horizontal origin
+                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true // Choose whether you can drag to open on touch screens
+            });
+        },
+        shouldComponentUpdate: () => false
+    })
+)(Main);

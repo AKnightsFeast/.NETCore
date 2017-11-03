@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import { render } from 'react-dom';
 import { Provider, connect } from 'react-redux';
-import { compose/*, lifecycle*/ } from 'recompose';
+import { compose } from 'recompose';
 
 //import { Icon } from 'react-materialize';
 

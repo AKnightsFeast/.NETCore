@@ -22,10 +22,27 @@
       "resolved": "https://registry.npmjs.org/@types/jquery/-/jquery-3.2.16.tgz",
       "integrity": "sha512-q2WC02YxQoX2nY1HRKlYGHpGP1saPmD7GN0pwCDlTz35a4eOtJG+aHRlXyjCuXokUukSrR2aXyBhSW3j+jPc0A=="
     },
+    "@types/materialize-css": {
+      "version": "0.100.2",
+      "resolved": "https://registry.npmjs.org/@types/materialize-css/-/materialize-css-0.100.2.tgz",
+      "integrity": "sha512-zG2WHq13iAPt1hgFdokkPholWICNRAzMNEJ454e+fo992ADJrWNoXC7FDvjjEMJKbe/HVezH1zps/Iai1U8Xzg==",
+      "requires": {
+        "@types/jquery": "3.2.16",
+        "@types/pickadate": "3.5.31"
+      }
+    },
     "@types/node": {
       "version": "8.0.7",
       "resolved": "https://registry.npmjs.org/@types/node/-/node-8.0.7.tgz",
       "integrity": "sha1-+wrQS1tvbqvgNyoyqPH7ulwTDK4="
+    },
+    "@types/pickadate": {
+      "version": "3.5.31",
+      "resolved": "https://registry.npmjs.org/@types/pickadate/-/pickadate-3.5.31.tgz",
+      "integrity": "sha512-DT3aPvNJ09Lw05RU/eNgFBHtHmslRbHUb8YKNqQm8jHPc0aP2de/fzzdRGFHL0eQRZP43KbqdO5KBHinS6Kbgw==",
+      "requires": {
+        "@types/jquery": "3.2.16"
+      }
     },
     "@types/react": {
       "version": "16.0.19",
@@ -1884,6 +1901,11 @@
       "integrity": "sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=",
       "dev": true
     },
+    "hammerjs": {
+      "version": "2.0.8",
+      "resolved": "https://registry.npmjs.org/hammerjs/-/hammerjs-2.0.8.tgz",
+      "integrity": "sha1-BO93hiz/K7edMPdpIJWTAiK/YPE="
+    },
     "has": {
       "version": "1.0.1",
       "resolved": "https://registry.npmjs.org/has/-/has-1.0.1.tgz",
@@ -2528,6 +2550,15 @@
             "set-getter": "0.1.0"
           }
         }
+      }
+    },
+    "materialize-css": {
+      "version": "0.100.2",
+      "resolved": "https://registry.npmjs.org/materialize-css/-/materialize-css-0.100.2.tgz",
+      "integrity": "sha512-Bf4YeoJCIdk4dlpnmVX+DIOJBbqOKwfBPD+tT5bxwXNFMLk649CGbldqtnctkkfMp+fGgSAsdYu9lo1ZolZqgA==",
+      "requires": {
+        "hammerjs": "2.0.8",
+        "jquery": "3.2.1"
       }
     },
     "math-expression-evaluator": {
