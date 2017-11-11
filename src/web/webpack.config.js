@@ -15,29 +15,40 @@ module.exports = (env) => {
         stats: { modules: false },
         output: {
             filename: '[name].js',
-            publicPath: 'dist/' // Webpack dev middleware, if enabled, handles requests for this URL prefix
+            publicPath: path.resolve(BUILD_DIR, 'dist') // Webpack dev middleware, if enabled, handles requests for this URL prefix
         },
         module: {
             rules: [
                 { test: /\.tsx?$/, include: SRC_DIR, use: 'awesome-typescript-loader'/*?silent=true*/ },
-                { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
+                { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' },
+                {
+                    test: /\.css$/,
+                    use: ExtractTextPlugin.extract({
+                        use: isDevBuild ? 'css-loader' : 'css-loader?minimize'
+                    })
+                }
             ]
         },
         resolve: {
-            extensions: ['.js', '.jsx', '.ts', '.tsx']//,
-            /*
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            modules: [__dirname, 'node_modules'],
             alias: {
                 Utils: path.resolve(SRC_DIR, 'utils'),
                 Assets: path.resolve(SRC_DIR, "assets"),
+                CSS: path.resolve(SRC_DIR, 'assets', 'css'),
                 Constants: path.resolve(SRC_DIR, 'constants'),
                 Epics: path.resolve(SRC_DIR, 'redux', 'epics'),
                 Components: path.resolve(SRC_DIR, 'components'),
                 Stores: path.resolve(SRC_DIR, 'redux', 'stores'),
-                Reducers: path.resolve(SRC_DIR, 'redux', 'reducers')
+                Menus: path.resolve(SRC_DIR, 'components', 'menus'),
+                Reducers: path.resolve(SRC_DIR, 'redux', 'reducers'),
+                Layouts: path.resolve(SRC_DIR, 'components', 'layouts')
             }
-            */
         },
-        plugins: [new CheckerPlugin()]
+        plugins: [
+            new CheckerPlugin(),
+            new ExtractTextPlugin('site.css')
+        ]
     });
 
     // Configuration for client-side bundle suitable for running in browsers
@@ -45,13 +56,20 @@ module.exports = (env) => {
     const clientBundleConfig = merge(sharedConfig(), {
         entry: { 'main-client': './ClientApp/boot-client.tsx' },
         output: { path: path.join(__dirname, clientBundleOutputDir) },
+        /*
         module: {
             rules: [
-                { test: /\.css$/, use: ExtractTextPlugin.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) }
+                {
+                    test: /\.css$/,
+                    use: ExtractTextPlugin.extract({
+                        use: isDevBuild ? 'css-loader' : 'css-loader?minimize',
+                        fallback: 'style-loader'
+                    })
+                }
             ]
         },
+        */
         plugins: [
-            new ExtractTextPlugin('site.css'),
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')

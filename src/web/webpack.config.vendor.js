@@ -17,8 +17,9 @@ module.exports = (env) => {
         },
         entry: {
             vendor: [
-                //'bootstrap',
-                //'bootstrap/dist/css/bootstrap.css',
+                'axios',
+                //'materialize-css',
+                //'materialize-css/dist/css/materialize.css',
                 'domain-task',
                 'event-source-polyfill',
                 'history',
@@ -27,9 +28,12 @@ module.exports = (env) => {
                 'react-router-dom',
                 'react-redux',
                 'redux',
-                //'redux-thunk',
+                'redux-observable',
+                'rxjs',
                 'react-router-redux',
-                'jquery'
+                'connected-react-router'//,
+                //'jquery',
+                //'jquery-ui'
             ],
         },
         output: {

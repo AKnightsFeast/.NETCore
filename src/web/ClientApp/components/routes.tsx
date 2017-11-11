@@ -1,5 +1,5 @@
 ﻿import * as React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import * as Menus from 'Menus';
 import Layout from 'Layouts/Main';
@@ -11,8 +11,8 @@ import Policies from 'Components/policies';
 import Testimonials from 'Components/testimonials';
 import GiftCertificates from 'Components/giftcertificates';
 
-export default () =>
-    <Route path="/" component={Layout}>
+export const Routes =
+    <Layout>
         <Route exact path='/' component={Home} />
         <Route exact path='/About' component={About} />
         <Route exact path='/Friends' component={Friends} />
@@ -23,4 +23,4 @@ export default () =>
         <Route exact path='/Menus/Personal' component={Menus.PersonalMenu} />
         <Route exact path='/Testimonials' component={Testimonials} />
         <Route exact path='/GiftCertificates' component={GiftCertificates} />
-    </Route>
+    </Layout>

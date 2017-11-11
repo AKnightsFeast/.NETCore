@@ -40,7 +40,7 @@ export default (history: any, initialState?: IApplicationState) => {
     // If devTools is installed, connect to it
     const devToolsExtension = windowIfDefined && windowIfDefined.devToolsExtension as () => GenericStoreEnhancer;
 
-    const createStoreWithMiddleware = (reducer: any, state?: IApplicationState) => compose(
+    const createStoreWithMiddleware: any = compose(
         applyMiddleware(
             createEpicMiddleware(epic),
             routerMiddleware(history)

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="jQuery" Version="3.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
@@ -47,6 +48,20 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\components\assessment\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\bgcands.jpg" />
+    <None Include="wwwroot\Images\bgfishstew.jpg" />
+    <None Include="wwwroot\Images\bgseafood.jpg" />
+    <None Include="wwwroot\Images\bgsquash.jpg" />
+    <None Include="wwwroot\Images\IMG_2451.JPG" />
+    <None Include="wwwroot\Images\logo.png" />
+    <None Include="wwwroot\Images\logocover.png" />
+    <None Include="wwwroot\Images\logo_bg.png" />
+    <None Include="wwwroot\Images\smflower.png" />
+    <None Include="wwwroot\Images\smflower.svg" />
+    <None Include="wwwroot\Images\smvines.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -91,6 +106,10 @@
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       </ResolvedFileToPublish>
     </ItemGroup>
+  </Target>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="RD /S /Q &quot;$(ProjectDir)wwwroot\dist\&quot;&#xD;&#xA;RD /S /Q &quot;$(ProjectDir)ClientApp\dist\&quot;" />
   </Target>
 
 </Project>

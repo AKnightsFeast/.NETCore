@@ -7,7 +7,7 @@ import { createMemoryHistory } from 'history';
 import { createServerRenderer, RenderResult } from 'aspnet-prerendering';
 
 import CreateStore from 'Stores';
-import Routes from 'Components/routes';
+import { Routes } from 'Components/routes';
 
 export default createServerRenderer(params => {
     return new Promise<RenderResult>((resolve, reject) => {

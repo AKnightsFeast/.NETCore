@@ -3,3 +3,4 @@ bin/
 .git 
 .vs 
 /src/web/ClientApp/dist
+/src/web/wwwroot/lib/jquery

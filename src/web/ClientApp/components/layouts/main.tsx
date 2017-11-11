@@ -2,15 +2,12 @@
 import { compose, lifecycle } from 'recompose';
 import { NavLink, Link } from 'react-router-dom';
 
-import * as $ from 'jquery';
-import 'materialize-css';
-
 const Main = (props: any) =>
     <div>
 	    <div id="headernav" className="navbar-fixed">
 		    <nav className="white" role="navigation">
 			    <div className="nav-wrapper">
-				    <Link id="logo-container" to="/Home" className="brand-logo">
+                    <Link id="logo-container" to="/Home" className="brand-logo">
 					    <svg id="logosvg" width="43" height="48.101582" className="hide-on-small-only">
 						    <g id="g20" transform="matrix(3.0974824,0,0,3.0974824,-0.113997,0.49559718)">
                                 <path style={ [{ "fill": "#fcf6f8" }, {"stroke-width": "1"}] }

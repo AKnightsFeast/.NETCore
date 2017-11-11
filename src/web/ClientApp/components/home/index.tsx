@@ -54,8 +54,8 @@ export default () =>
                             </div>
                             <div className="col s12 m10 flow-text">
                                 <b className="pink-text">A Knight's Feast Personal Chef Service</b> prepares your choice of meals - made fresh in your own kitchen - and packages
-                        them with easy-to-follow heating instructions. We create meals that meet your specific dietary and nutritional needs
-                        and appeal to your personal tastes.  <b className="pink-text"><u>What can I do for you?</u></b>
+                                them with easy-to-follow heating instructions. We create meals that meet your specific dietary and nutritional needs
+                                and appeal to your personal tastes.  <b className="pink-text"><u>What can I do for you?</u></b>
                             </div>
                         </li>
                     </ul>
@@ -70,14 +70,12 @@ export default () =>
                         <h5 className="header col s12 light">
                             <i>
                                 "A personal chef service is for anyone looking for a few nights off from worrying
-                        about what's for dinner."
-                    </i>
+                                about what's for dinner."
+                            </i>
                         </h5>
                     </div>
                     <div className="row">
-                        <h5 className="header col s12 light right-align">
-                            Chef Laura
-                </h5>
+                        <h5 className="header col s12 light right-align">Chef Laura</h5>
                     </div>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 ﻿import * as React from 'react';
 import { render } from 'react-dom';
-import { Provider, connect } from 'react-redux';
 import { compose } from 'recompose';
+import { Provider, connect } from 'react-redux';
 
 //import { Icon } from 'react-materialize';
 
-import 'Assets/calendar.css';
+import 'CSS/calendar.css';
 
 import Menu from './Menu';
 import DayPicker from './DayPicker';
@@ -20,7 +20,7 @@ import { MonthArray, YearArray, GetFormattedDate, ITuesday  } from "Utils";
 const DateButton = ({ onClick, icon }) => <i onClick={ onClick } className='material-icons'>{ icon }</i>
 */
 
-const Calendar = (props: {
+const Calendar = (props: any/*{
     menus: IMenu[],
     days: ITuesday[],
     selecteddate: Date,
@@ -30,7 +30,7 @@ const Calendar = (props: {
     OnDayChange: (date: string) => void,
     OnMenuChange: (menu: string) => void,
     OnDateChange: (month: number, year: number) => void
-}) =>
+}*/) =>
     <div id="MonthlyMenus">
         <div className="row">
             <div className="col s12 m3">

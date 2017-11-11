@@ -6,12 +6,15 @@ import { createBrowserHistory, History } from 'history';
 //import { ConnectedRouter } from 'react-router-redux';
 import { ConnectedRouter } from 'connected-react-router';
 
-import Routes from 'Components/routes';
+import { Routes } from 'Components/routes';
 import CreateStore, { IApplicationState } from 'Stores';
 
 let hotRoutes = Routes;
 
-import './css/site.css';
+import 'jquery';
+import 'materialize-css';
+
+import './assets/css/site.css';
 
 // Create browser history to use in the Redux store
 const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href')!;
