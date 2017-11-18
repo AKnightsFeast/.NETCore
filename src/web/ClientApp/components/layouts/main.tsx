@@ -49,16 +49,16 @@ export default () =>
 						    <li>
                                 <ul style={[{ "margin-left": "15px;" }]}>
                                     <li title="Monthly Menus">
-                                        <Link to="/Calendar" className="waves-effect white-text">Monthly</Link>
+                                        <Link to="/Menus/Calendar" className="waves-effect white-text">Monthly</Link>
                                     </li>
                                     <li title="Personal Menus">
-                                        <Link to="/Personal" className="waves-effect white-text">Personal</Link>
+                                        <Link to="/Menus/Personal" className="waves-effect white-text">Personal</Link>
                                     </li>
                                     <li title="Menus for Themed Events">
-                                        <Link to="/Themed" className="waves-effect white-text">Themed Events</Link>
+                                        <Link to="/Menus/Themed" className="waves-effect white-text">Themed Events</Link>
                                     </li>
                                     <li title="Pack Your Freezer">
-                                        <Link to="/Freezer" className="waves-effect white-text">Pack Your Freezer</Link>
+                                        <Link to="/Menus/Freezer" className="waves-effect white-text">Pack Your Freezer</Link>
                                     </li>
 							    </ul>
 						    </li>

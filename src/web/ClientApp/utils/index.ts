@@ -52,11 +52,6 @@ export const BindClosures = (closuresMap: any) => {
         spec.displayName = 'ClosureWrapper(' + componentName + ')';
 
         return createReactClass(spec);
-
-        //const Wrapper = React.createClass(spec);
-        //Wrapper.displayName = 'ClosureWrapper(' + componentName + ')';
-
-        //return Wrapper;
     };
 };
 
@@ -94,8 +89,8 @@ export const GetTuesdays = (month: string, year: number): ITuesday[] => {
         // Get all the other Tuesdays in the month
         while (d.getMonth() === monthNumber) {
             tuesdays.push({
+                date: d,
                 attr: {},
-                date: new Date(d),
                 label: GetFormattedDate(d)
             });
 

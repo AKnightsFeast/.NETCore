@@ -129,16 +129,16 @@ export default () =>
                             <div className="collapsible-body pink">
                                 <ul>
                                     <li title="Monthly Menus">
-                                        <NavLink to="/Calendar" className="waves-effect white-text">Monthly</NavLink>
+                                        <NavLink to="/Menus/Calendar" className="waves-effect white-text">Monthly</NavLink>
                                     </li>
                                     <li title="Personal Menus">
-                                        <NavLink to="/Personal" className="waves-effect white-text">Personal</NavLink>
+                                        <NavLink to="/Menus/Personal" className="waves-effect white-text">Personal</NavLink>
                                     </li>
                                     <li title="Menus for Themed Events">
-                                        <NavLink to="/Themed" className="waves-effect white-text">Themed Events</NavLink>
+                                        <NavLink to="/Menus/Themed" className="waves-effect white-text">Themed Events</NavLink>
                                     </li>
                                     <li title="Pack Your Freezer">
-                                        <NavLink to="/Freezer" className="waves-effect white-text">Pack Your Freezer</NavLink>
+                                        <NavLink to="/Menus/Freezer" className="waves-effect white-text">Pack Your Freezer</NavLink>
                                     </li>
                                 </ul>
                             </div>

@@ -30,43 +30,48 @@ const Calendar = (props: any/*{
     OnDayChange: (date: string) => void,
     OnMenuChange: (menu: string) => void,
     OnDateChange: (month: number, year: number) => void
-}*/) =>
-    <div id="MonthlyMenus">
-        <div className="row">
-            <div className="col s12 m3">
-                <ul>
-                    <li className="">
-                        <div>
-                            <MonthYearPicker OnDateChange={ props.OnDateChange }
-                                             years={ YearArray }
-                                             months={ MonthArray }
-                                             selectedyear={ props.selectedyear }
-                                             selectedmonth={ props.selectedmonth } />
-                        </div>
-                        <div>
-                            <DayPicker OnDayChange={ props.OnDayChange } days={ props.days } />
-                        </div>
-                    </li>
-                </ul>
+}*/) => {
+    const formattedSelectedDate = GetFormattedDate(new Date(props.selecteddate));
 
-                <ul>
-                    <li className="">
-                        <div><i className="material-icons">{ "event_note" }</i>{ "Menus" }</div>
-                        <div>
-                            <MenuPicker OnMenuChange={ props.OnMenuChange } menus={ props.menus } />
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    return (
+        <div id="MonthlyMenus">
+            <div className="row">
+                <div className="col s12 m3">
+                    <ul>
+                        <li className="">
+                            <div>
+                                <MonthYearPicker OnDateChange={props.OnDateChange}
+                                    years={YearArray}
+                                    months={MonthArray}
+                                    selectedyear={props.selectedyear}
+                                    selectedmonth={props.selectedmonth} />
+                            </div>
+                            <div>
+                                <DayPicker OnDayChange={props.OnDayChange} days={props.days} />
+                            </div>
+                        </li>
+                    </ul>
 
-            <div className="col s12 m9">
-                <h4>{ "Menus for the Week of " + GetFormattedDate(props.selecteddate) }</h4>
-                <Menu selectedmenu={ props.selectedmenu }
-                      selecteddate={ GetFormattedDate(props.selecteddate) }
-                      selectedmonth={ props.selectedmonth } />
+                    <ul>
+                        <li className="">
+                            <div><i className="material-icons">{"event_note"}</i>{"Menus"}</div>
+                            <div>
+                                <MenuPicker OnMenuChange={props.OnMenuChange} menus={props.menus} />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="col s12 m9">
+                    <h4>{"Menus for the Week of " + formattedSelectedDate}</h4>
+                    <Menu selectedmenu={props.selectedmenu}
+                        selecteddate={formattedSelectedDate}
+                        selectedmonth={props.selectedmonth} />
+                </div>
             </div>
         </div>
-    </div>
+    );
+};
 
 export default compose(
     connect(
