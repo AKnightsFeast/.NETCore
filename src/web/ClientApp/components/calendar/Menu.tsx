@@ -5,7 +5,7 @@ import { IMenu } from 'Stores/Calendar';
 export default (props: { selectedmenu: IMenu, selecteddate: string, selectedmonth: number }) => {
     const { selectedmenu, selecteddate, selectedmonth } = props;
 
-    if (selectedmenu == null) return <div></div>
+    if (selectedmenu == null) return (<div></div>);
 
     return (
         <div id="card-container">

@@ -1,5 +1,5 @@
 ﻿import * as React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default () =>
     <div>
@@ -32,9 +32,9 @@ export default () =>
                                 </div>
                                 <div className="col s12 m10 flow-text">
                                     Have you and your family become too reliant on carryout meals, mass-produced restaurant food, or boxed dinners
-                            with minimal nutritional value? Do you want to eat healthier but lack the time to plan, shop for and cook meals
-                            that are good for you?
-                        </div>
+                                    with minimal nutritional value? Do you want to eat healthier but lack the time to plan, shop for and cook meals
+                                    that are good for you?
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -225,14 +225,14 @@ export default () =>
 
                             <p>
                                 <b>Individually Packaged:</b>
-                                <ul>
-                                    <li>$200 minimum order for up to 10 meals</li>
-                                    <li>10 meals could be lunch and dinner for one or five dinners for two</li>
-                                    <li>Extra meals are $20 each</li>
-                                </ul>
                             </p>
+                            <ul>
+                                <li>$200 minimum order for up to 10 meals</li>
+                                <li>10 meals could be lunch and dinner for one or five dinners for two</li>
+                                <li>Extra meals are $20 each</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>

@@ -18,8 +18,8 @@ module.exports = (env) => {
         entry: {
             vendor: [
                 'axios',
-                //'materialize-css',
-                //'materialize-css/dist/css/materialize.css',
+                'materialize-css',
+                'materialize-css/dist/css/materialize.css',
                 'domain-task',
                 'event-source-polyfill',
                 'history',
@@ -31,9 +31,8 @@ module.exports = (env) => {
                 'redux-observable',
                 'rxjs',
                 'react-router-redux',
-                'connected-react-router'//,
-                //'jquery',
-                //'jquery-ui'
+                'connected-react-router',
+                'jquery'
             ],
         },
         output: {

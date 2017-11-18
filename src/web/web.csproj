@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="jQuery" Version="3.2.1" />
+    <PackageReference Include="materialize" Version="0.97.6" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
@@ -39,7 +40,6 @@
     <None Remove="ClientApp\components\home\index.tsx" />
     <None Remove="ClientApp\components\menus\themed.tsx" />
     <None Remove="ClientApp\components\policies\index.tsx" />
-    <None Remove="ClientApp\components\routes.tsx" />
     <None Remove="ClientApp\components\testimonials\index.tsx" />
     <None Remove="ClientApp\redux\epics\index.ts" />
     <None Remove="ClientApp\redux\reducers\index.ts" />
@@ -71,7 +71,6 @@
     <TypeScriptCompile Include="ClientApp\components\home\index.tsx" />
     <TypeScriptCompile Include="ClientApp\components\menus\themed.tsx" />
     <TypeScriptCompile Include="ClientApp\components\policies\index.tsx" />
-    <TypeScriptCompile Include="ClientApp\components\Routes.tsx" />
     <TypeScriptCompile Include="ClientApp\components\testimonials\index.tsx" />
     <TypeScriptCompile Include="ClientApp\redux\epics\index.ts" />
     <TypeScriptCompile Include="ClientApp\redux\reducers\index.ts" />

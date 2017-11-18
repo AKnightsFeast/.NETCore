@@ -7,7 +7,7 @@ import { createMemoryHistory } from 'history';
 import { createServerRenderer, RenderResult } from 'aspnet-prerendering';
 
 import CreateStore from 'Stores';
-import { Routes } from 'Components/routes';
+import Site from 'Components/site';
 
 export default createServerRenderer(params => {
     return new Promise<RenderResult>((resolve, reject) => {
@@ -25,8 +25,9 @@ export default createServerRenderer(params => {
             <Provider store={ store }>
                 <StaticRouter basename={basename}
                               context={routerContext}
-                              location={params.location.path}
-                              children={Routes} />
+                              location={params.location.path}>
+                    <Site />
+                </StaticRouter>
             </Provider>
         );
         renderToString(app);

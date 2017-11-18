@@ -136,10 +136,8 @@ export const MonthArray = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug
 /**
  * Returns reducer based on key-type "action.type"
  */
-export const CreateReducer = (initialState: object, handlers: any) => {
-    return (state = initialState, action: IReducerAction) => {
-        const handler = handlers[action.type];
+export const CreateReducer = (initialState: object, handlers: any) => (state = initialState, action: IReducerAction) => {
+    const handler = handlers[action.type];
 
-        return handler ? handler(state, action.payload) : state;
-    };
-}
+    return handler ? handler(state, action.payload) : state;
+};

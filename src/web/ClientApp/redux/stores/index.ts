@@ -19,7 +19,7 @@ import initialCalendarStore, { ICalendar } from './Calendar';
 
 export interface IApplicationState
 {
-    assessment: object,
+    //assessment: object,
     monthlymenu: ICalendar
 }
 
@@ -30,7 +30,7 @@ function buildRootReducer(allReducers: ReducersMapObject) {
 export default (history: any, initialState?: IApplicationState) => {
     if (initialState == null)
         initialState = {
-            assessment: {},
+            //assessment: {},
             monthlymenu: initialCalendarStore
         } as IApplicationState;
 
@@ -50,6 +50,7 @@ export default (history: any, initialState?: IApplicationState) => {
 
     const enhancedStore = createStoreWithMiddleware(reducer, initialState) as Store<IApplicationState>;
 
+/*
     // Enable Webpack hot module replacement for reducers
     if (module.hot) {
         module.hot.accept('Reducers', () => {
@@ -57,6 +58,7 @@ export default (history: any, initialState?: IApplicationState) => {
             enhancedStore.replaceReducer(buildRootReducer(nextRootReducer));
         });
     }
+*/
 
     return enhancedStore;
 }

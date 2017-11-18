@@ -29,6 +29,7 @@
   },
     "exclude": [
         "bin",
+        "dist",
         "node_modules",
         "ClientApp_default"
     ]
