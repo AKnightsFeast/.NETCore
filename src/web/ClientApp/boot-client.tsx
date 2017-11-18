@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
 import { createBrowserHistory, History } from 'history';
-import { ConnectedRouter } from 'react-router-redux';
+//import { ConnectedRouter } from 'react-router-redux';
 import { Router } from 'react-router-dom';
 //import { ConnectedRouter } from 'connected-react-router';
 
@@ -12,8 +12,8 @@ import CreateStore, { IApplicationState } from 'Stores';
 
 //let hotRoutes = Routes;
 
-import * as $ from 'jquery';
-import 'materialize-css';
+var $ = require('jquery');
+require('materialize-css/dist/js/materialize.js');
 
 import './assets/css/site.css';
 import 'materialize-css/dist/css/materialize.css';

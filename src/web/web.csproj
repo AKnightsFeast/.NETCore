@@ -5,6 +5,9 @@
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
     <IsPackable>false</IsPackable>
+    <Company>A Knight's Feast</Company>
+    <Product>Personal Chef Service</Product>
+    <Authors>Rufus Knight</Authors>
   </PropertyGroup>
 
   <ItemGroup>
