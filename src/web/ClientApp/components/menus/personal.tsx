@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 
-export const MenuNav = () =>
+export const MenuNav =
     <ul className="menulnks">
         <li><a className="menulnk" data-menu="soups">Soups</a></li>
         <li><a className="menulnk" data-menu="salads">Salads</a></li>
@@ -15,7 +15,7 @@ export const MenuNav = () =>
         <li><a className="menulnk" data-menu="desserts">Desserts</a></li>
     </ul>
 
-export const MenuContents = () =>
+export const MenuContents =
     <div>
         <div id="soups" className="menu">
             <ul>
@@ -104,13 +104,13 @@ export const MenuContents = () =>
             </ul>
         </div>
         <div id="healthy" className="menu">
-            <p style={ { "font-weight": "bold" } }>
+            <p style={{ fontWeight: "bold" } }>
                 Below are some low calorie sauces for chicken, fish, shrimp, turkey breast, pork
-        tenderloin, or lean beef. They are served with an appropriate vegetable and a rice,
-        quinoa, cous cous, pasta or potato according to your desired plan. There will not
-        be an additional vegetable if the sauce is vegetable heavy (like ratatouille). Feel
-        free to let Chef Laura know what you would like it served with if you have a preference.
-    </p>
+                tenderloin, or lean beef. They are served with an appropriate vegetable and a rice,
+                quinoa, cous cous, pasta or potato according to your desired plan. There will not
+                be an additional vegetable if the sauce is vegetable heavy (like ratatouille). Feel
+                free to let Chef Laura know what you would like it served with if you have a preference.
+            </p>
             <ul>
                 <li>Blueberry Salsa or Sauce</li>
                 <li>Mango Salsa or Sauce</li>
@@ -155,9 +155,9 @@ export const MenuContents = () =>
                 <li>Jamaican Jerk</li>
             </ul>
 
-            <p style={{ "font-weight": "bold" }}>
+            <p style={{ fontWeight: "bold" }}>
                 Below are higher calorie sauces, but made with olive oil or coconut oil
-    </p>
+            </p>
             <ul>
                 <li>Piccata - Lemon Caper</li>
                 <li>Marsala - Mushroom</li>
@@ -176,13 +176,13 @@ export const MenuContents = () =>
             </ul>
             <p>
                 If you like cream sauces let me know and I can make them with coconut oil based butter
-        and skim milk, but I rarely if ever buy low fat or fat free cheese.
-    </p>
+                and skim milk, but I rarely if ever buy low fat or fat free cheese.
+            </p>
 
-            <p style={{ "font-weight": "bold" }}>
+            <p style={{ fontWeight: "bold" }}>
                 Stir Fry – Your protein choice, fresh garlic and ginger made with Coconut Oil over
-        Brown Rice, Quinoa or Soba Noodles
-    </p>
+                Brown Rice, Quinoa or Soba Noodles
+            </p>
             <ul>
                 <li>Broccoli</li>
                 <li>Green Beans, Sesame Seeds, and Chili Oil</li>
@@ -197,12 +197,12 @@ export const MenuContents = () =>
             </ul>
             <p>
                 Asian Sauces: Soy and Rice Wine, Sweet and Sour, Oyster, Peanut, Teriyaki, Black
-        Bean, Green Curry
-    </p>
+                Bean, Green Curry
+            </p>
 
-            <p style={{ "font-weight": "bold" }}>
+            <p style={{ fontWeight: "bold" }}>
                 Fresh Made Hummus Flavors – Great for lunch with Pita and your favorite grilled protein
-    </p>
+            </p>
             <ul>
                 <li>Roasted Garlic</li>
                 <li>Roasted Red Pepper</li>
@@ -216,9 +216,9 @@ export const MenuContents = () =>
                 <li>Roasted Beet</li>
             </ul>
 
-            <p style={{ "font-weight": "bold" }}>
+            <p style={{ fontWeight: "bold" }}>
                 Low Calorie and High Fiber Stews – Nonfat Greek Yogurt Used where Cream is mentioned
-    </p>
+            </p>
             <ul>
                 <li>Cabbage, Carrot and Tomato</li>
                 <li>Sausage, Kale and Lentil</li>
@@ -245,9 +245,9 @@ export const MenuContents = () =>
                 <li>Roasted Root Vegetable</li>
             </ul>
 
-            <p style={{ "font-weight": "bold" }}>
+            <p style={{ fontWeight: "bold" }}>
                 Salads as a Meal – some assembly required
-    </p>
+            </p>
             <ul>
                 <li>Greek Yogurt Chicken, Tuna, or Shrimp Salad</li>
                 <li>Grilled Lemon Thyme Chicken Breast or Turkey Breast</li>
@@ -260,21 +260,20 @@ export const MenuContents = () =>
             </ul>
             <p>
                 Salads will come with packaged greens, your desired protein, grape tomatoes and home
-        made dressing
-    </p>
+                made dressing
+            </p>
             <p>
                 Vinaigrettes made with Olive Oil or Canola, Balsamic, Pomegranate, Champagne, Red
-        Wine, French, Citrus, Raspberry, Asian Ginger Peanut, Mexican Cumin Lime, Agave
-        Dijon, or White Balsamic
-    </p>
+                Wine, French, Citrus, Raspberry, Asian Ginger Peanut, Mexican Cumin Lime, Agave
+                Dijon, or White Balsamic
+            </p>
             <p>
-                Creamy dressings made with Nonfat Greek Yogurt - Ranch, Russian, Blue Cheese or Creamy
-        Italian
-    </p>
+                Creamy dressings made with Nonfat Greek Yogurt - Ranch, Russian, Blue Cheese or Creamy Italian
+            </p>
 
-            <p style={{ "font-weight": "bold" }}>
+            <p style={{ fontWeight: "bold" }}>
                 * No sugar is added. Agave is used for anything that may need it
-    </p>
+            </p>
         </div>
         <div id="pasta" className="menu">
             <ul>
@@ -331,7 +330,7 @@ export const MenuContents = () =>
                     </ul>
                     <div className="note">
                         *Feel free to add a protein to any pasta sauce to make it an entrée!
-            </div>
+                    </div>
                 </li>
             </ul>
         </div>

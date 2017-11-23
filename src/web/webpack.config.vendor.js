@@ -31,7 +31,6 @@ module.exports = (env) => {
                 'redux-observable',
                 'rxjs',
                 'react-router-redux',
-                'connected-react-router',
                 'jquery'
             ],
         },
@@ -44,7 +43,8 @@ module.exports = (env) => {
             new webpack.ProvidePlugin({
                 $: 'jquery',
                 jQuery: 'jquery',
-                "window.jQuery": "jquery"
+                "window.jQuery": "jquery",
+                "Materialize": "materialize-css",
             }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
             new webpack.NormalModuleReplacementPlugin(/\/iconv-loader$/, require.resolve('node-noop')), // Workaround for https://github.com/andris9/encoding/issues/16
             new webpack.DefinePlugin({

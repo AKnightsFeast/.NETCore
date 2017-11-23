@@ -3,6 +3,10 @@ import { NavLink, Link, Router, Route, Switch } from 'react-router-dom';
 
 import Main from 'Layouts/main';
 
+import 'Assets/css/reset.css';
+import 'materialize-css/dist/css/materialize.css';
+import 'Assets/css/site.css';
+
 export default () =>
     <div>
         <div id="headernav" className="navbar-fixed">
@@ -173,26 +177,16 @@ export default () =>
         </Switch>
     </div>
 
-//export default Main;
-
 /*
+import { compose, lifecycle } from 'recompose';
+
 export default compose(
     lifecycle({
         componentDidMount: () => {
-            let $window = $(window);
-
-            $("a#scrolltop").click(function () {
-                $window.scrollTop(0);
-            });
-
-            $('.sidenav-activator').sideNav({
-                menuWidth: 300, // Default is 300
-                edge: 'right', // Choose the horizontal origin
-                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                draggable: true // Choose whether you can drag to open on touch screens
+            $(function () {
             });
         },
         shouldComponentUpdate: () => false
     })
-)(Main);
+)(Home);
 */

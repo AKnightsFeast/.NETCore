@@ -1,6 +1,6 @@
 ﻿import * as React from 'react'
 
-export const MenuNav = () =>
+export const MenuNav =
     <ul className="menulnks">
         <li><a className="menulnk" data-menu="wedmenu">Holiday</a></li>
         <li><a className="menulnk" data-menu="gdmenu">Game Day</a></li>
@@ -23,7 +23,7 @@ export const MenuNav = () =>
         <li><a className="menulnk" data-menu="vdmenu">Valentine's Day Menu</a></li>
     </ul>
 
-export const MenuContents = () =>
+export const MenuContents =
     <div>
         <div id="wedmenu" className="menu">
             <ul>
@@ -203,11 +203,11 @@ export const MenuContents = () =>
                         <li>Cheddar Stuffed Jalapeños</li>
                         <li>
                             Stuffed Potato Footballs:
-                    Beef, Mushrooms, and Gouda
-                    Bacon and Cheddar
-                    Pizza Lovers
-                    Roasted Garlic, Chives, and White Cheddar
-                </li>
+                            Beef, Mushrooms, and Gouda
+                            Bacon and Cheddar
+                            Pizza Lovers
+                            Roasted Garlic, Chives, and White Cheddar
+                        </li>
                         <li>BBQ Shrimp</li>
                         <li>Steak Bites</li>
                         <li>Corn Bread Muffins</li>
@@ -243,8 +243,8 @@ export const MenuContents = () =>
                     </ul>
                     <div className="note">
                         *Burgers and Sandwiches include Buns, Condiments, Sliced Tomatoes, Lettuce Leaves, Sliced Onions and
-                Bread and Butter Pickles
-            </div>
+                        Bread and Butter Pickles
+                    </div>
                 </li>
                 <li>
                     <div className="header">Side Salads</div>
@@ -294,13 +294,13 @@ export const MenuContents = () =>
                         <li>Red Sangria with your Favorite Fruits</li>
                         <li>
                             Smoothie, Daiquiri, Mojito or Margarita Base:
-                    Strawberry, Peach, Mango, Raspberry, Lime, Lemon
-                </li>
+                            Strawberry, Peach, Mango, Raspberry, Lime, Lemon
+                        </li>
                     </ul>
                     <div className="note">
                         *You pick the Sweetener Used for the Simple Syrup-
-                Agave, Honey, Raw Brown Sugar, White Sugar, or Splenda
-            </div>
+                        Agave, Honey, Raw Brown Sugar, White Sugar, or Splenda
+                    </div>
                 </li>
             </ul>
         </div>
@@ -332,8 +332,8 @@ export const MenuContents = () =>
                         <li>Spooky Punch – Strawberry Smoothie, OJ, 7-up and Vodka</li>
                         <li>
                             Bloody Mary Bar Stocked with
-                    Tomato Juice, Hot Sauce, Celery, Horseradish, A-1, and Olives
-                </li>
+                            Tomato Juice, Hot Sauce, Celery, Horseradish, A-1, and Olives
+                        </li>
                     </ul>
                 </li>
             </ul>

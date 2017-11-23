@@ -5,7 +5,7 @@ import { Provider, connect } from 'react-redux';
 
 //import { Icon } from 'react-materialize';
 
-import 'CSS/calendar.css';
+import 'Assets/css/calendar.css';
 
 import Menu from './Menu';
 import DayPicker from './DayPicker';
@@ -31,7 +31,19 @@ const Calendar = (props: any/*{
     OnMenuChange: (menu: string) => void,
     OnDateChange: (month: number, year: number) => void
 }*/) => {
-    const formattedSelectedDate = GetFormattedDate(new Date(props.selecteddate));
+    const {
+        days,
+        menus,
+        selectedmenu,
+        selecteddate,
+        selectedyear,
+        selectedmonth,
+        OnDayChange,
+        OnMenuChange,
+        OnDateChange
+    } = props;
+
+    const formattedSelectedDate = GetFormattedDate(new Date(selecteddate));
 
     return (
         <div id="MonthlyMenus">
@@ -40,14 +52,14 @@ const Calendar = (props: any/*{
                     <ul>
                         <li className="">
                             <div>
-                                <MonthYearPicker OnDateChange={props.OnDateChange}
+                                <MonthYearPicker OnDateChange={OnDateChange}
                                     years={YearArray}
                                     months={MonthArray}
-                                    selectedyear={props.selectedyear}
-                                    selectedmonth={props.selectedmonth} />
+                                    selectedyear={selectedyear}
+                                    selectedmonth={selectedmonth} />
                             </div>
                             <div>
-                                <DayPicker OnDayChange={props.OnDayChange} days={props.days} />
+                                <DayPicker OnDayChange={OnDayChange} days={days} />
                             </div>
                         </li>
                     </ul>
@@ -56,7 +68,7 @@ const Calendar = (props: any/*{
                         <li className="">
                             <div><i className="material-icons">{"event_note"}</i>{"Menus"}</div>
                             <div>
-                                <MenuPicker OnMenuChange={props.OnMenuChange} menus={props.menus} />
+                                <MenuPicker OnMenuChange={OnMenuChange} menus={menus} />
                             </div>
                         </li>
                     </ul>
@@ -64,9 +76,9 @@ const Calendar = (props: any/*{
 
                 <div className="col s12 m9">
                     <h4>{"Menus for the Week of " + formattedSelectedDate}</h4>
-                    <Menu selectedmenu={props.selectedmenu}
+                    <Menu selectedmenu={selectedmenu}
                         selecteddate={formattedSelectedDate}
-                        selectedmonth={props.selectedmonth} />
+                        selectedmonth={selectedmonth} />
                 </div>
             </div>
         </div>

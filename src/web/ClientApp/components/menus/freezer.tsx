@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 
-export const MenuNav = () =>
+export const MenuNav =
     <ul className="menulnks">
         <li><a className="menulnk" data-menu="bp">Baked Pastas</a></li>
         <li><a className="menulnk" data-menu="kp">Kid Pleasers</a></li>
@@ -16,7 +16,7 @@ export const MenuNav = () =>
         <li><a className="menulnk" data-menu="sc">Seasonal Cobblers</a></li>
     </ul>
 
-export const MenuContents = () =>
+export const MenuContents =
     <div>
         <div className="menu" id="bp">
             <div className="summary">Lasagnas, stuffed shells and mac and cheese are delivered in an 8 x 10 pan.</div>
@@ -48,12 +48,12 @@ export const MenuContents = () =>
             <ul>
                 <li>
                     Healthy Baked Chicken Tenders (Marinated in Dijon and Yogurt
-            and Coated in Whole Wheat Bread Crumbs) with Green beans or Broccoli
-        </li>
+                    and Coated in Whole Wheat Bread Crumbs) with Green beans or Broccoli
+                </li>
                 <li>
                     Healthy Baked Haddock Fish Sticks with Greek Yogurt Tarter
-            Sauce with Green Beans or Broccoli
-        </li>
+                    Sauce with Green Beans or Broccoli
+                </li>
             </ul>
         </div>
         <div className="menu" id="cass">
@@ -78,8 +78,8 @@ export const MenuContents = () =>
         <div className="menu" id="ch">
             <div className="summary">
                 Chilies are served one of three ways with sour cream and green onions on the side
-        (please indicate if you like beans or no beans and heat level).
-    </div>
+                (please indicate if you like beans or no beans and heat level).
+            </div>
             <div className="summary" style={{ "margin-left": "5px" }}>
                 <ol style={{ "list-style-type": "decimal" }}>
                     <li>Casserole style with Corn Bread and Cheese Baked on top</li>
@@ -127,8 +127,8 @@ export const MenuContents = () =>
         <div className="menu" id="ml">
             <div className="summary">
                 Can be served shepherd’s pie style with mashed Idaho or sweet potatoes on top in 8 x 10 pan or the loaf and the
-        potato in two separate containers.  Unless mentioned otherwise, the meatloaves are beef, pork and veal.
-    </div>
+                potato in two separate containers.  Unless mentioned otherwise, the meatloaves are beef, pork and veal.
+            </div>
             <ul>
                 <li>Traditional Meatloaf with Gravy with Potato Choice</li>
                 <li>Italian Meatloaf with Tomato Sauce with Potato Choice</li>
@@ -163,8 +163,8 @@ export const MenuContents = () =>
         <div className="menu" id="enc">
             <div className="summary">
                 Can also be tacos, just ask for the meat and tortillas to be kept separate.  Enchiladas are in an 8 x 10 foil pan. Taco
-        filler in 8 cup container. All are served with rice, beans and a salsa choice. Please indicate heat level.
-    </div>
+                filler in 8 cup container. All are served with rice, beans and a salsa choice. Please indicate heat level.
+            </div>
             <ul>
                 <li>Pulled Chuck Roast</li>
                 <li>Pork Carnitas – Pulled Pork Butt</li>
@@ -175,7 +175,7 @@ export const MenuContents = () =>
             </ul>
             <div>
                 Salsa Choices – Tomato, Roasted Tomato and Pepper, Peach, and Tropical
-    </div>
+            </div>
         </div>
         <div className="menu" id="sm">
             <div className="summary">All brought with an 8 pack of rolls.</div>

@@ -38,6 +38,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\components\about\index.tsx" />
+    <None Remove="ClientApp\components\clientsite.tsx" />
     <None Remove="ClientApp\components\friends\index.tsx" />
     <None Remove="ClientApp\components\giftcertificates\index.tsx" />
     <None Remove="ClientApp\components\home\index.tsx" />
@@ -50,10 +51,54 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\assets\Images\bgcands.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\bgfishstew.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\bgseafood.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\bgsquash.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\IMG_2451.JPG">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\logo.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\logo.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\logocover.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\logo_bg.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\smflower.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\smflower.svg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\assets\Images\smvines.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ClientApp\components\assessment\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\components\menus\calendar\DayPicker.tsx" />
+    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\components\menus\calendar\index.tsx" />
+    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\components\menus\calendar\Menu.tsx" />
+    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\components\menus\calendar\MenuPicker.tsx" />
+    <None Include="..\..\..\..\A Knight%2527s Feast\core\src\web\ClientApp\components\menus\calendar\MonthYearPicker.tsx" />
     <None Include="wwwroot\Images\bgcands.jpg" />
     <None Include="wwwroot\Images\bgfishstew.jpg" />
     <None Include="wwwroot\Images\bgseafood.jpg" />

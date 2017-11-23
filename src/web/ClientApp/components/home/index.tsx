@@ -1,6 +1,9 @@
 ﻿import * as React from 'react';
 import { Link } from 'react-router-dom';
 
+import 'Assets/css/home.css';
+import 'Assets/css/timeline.css';
+
 export default () =>
     <div>
         <div className="cover">

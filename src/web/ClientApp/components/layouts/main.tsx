@@ -1,12 +1,12 @@
 ﻿import * as React from 'react';
-//import { compose, lifecycle } from 'recompose';
 import { Link, Route, Switch } from 'react-router-dom';
 
 import * as Menus from 'Menus';
+import Calendar from 'Menus/calendar';
+
 import Home from 'Components/home';
 import About from 'Components/about';
 import Friends from 'Components/friends';
-import Calendar from 'Components/calendar';
 import Policies from 'Components/policies';
 import Testimonials from 'Components/testimonials';
 import GiftCertificates from 'Components/giftcertificates';
