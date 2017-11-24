@@ -8,13 +8,14 @@
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
-        <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+        <link href="~/dist/vendor.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/dist/site.css" rel="stylesheet" asp-append-version="true" />
     </head>
 
     <body>
         @RenderBody()
 
-        <script src="~/dist/vendor.js" asp-append-version="true"></script>@**@
+        <script src="~/dist/vendor.js" asp-append-version="true"></script>
         @RenderSection("scripts", required: false)
     </body>
 </html>

@@ -47,7 +47,7 @@ export default () =>
 					    <ul className="footer-ul">
 						    <li>Menus</li>
 						    <li>
-                                <ul style={[{ "margin-left": "15px;" }]}>
+                                <ul style={[{ marginLeft: "15px;" }]}>
                                     <li title="Monthly Menus">
                                         <Link to="/Menus/Calendar" className="waves-effect white-text">Monthly</Link>
                                     </li>

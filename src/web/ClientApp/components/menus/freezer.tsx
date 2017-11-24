@@ -80,8 +80,8 @@ export const MenuContents =
                 Chilies are served one of three ways with sour cream and green onions on the side
                 (please indicate if you like beans or no beans and heat level).
             </div>
-            <div className="summary" style={{ "margin-left": "5px" }}>
-                <ol style={{ "list-style-type": "decimal" }}>
+            <div className="summary" style={{ marginLeft: "5px" }}>
+                <ol style={{ listStyleType: "decimal" }}>
                     <li>Casserole style with Corn Bread and Cheese Baked on top</li>
                     <li>Casserole Style with Macaroni or rice on the bottom with cheese on top</li>
                     <li>Separate</li>
