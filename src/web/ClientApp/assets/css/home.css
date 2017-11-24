@@ -106,7 +106,7 @@ p.normal
 */
 div.cover {
     /* Location of the image */
-    background-image: url(../Images/bgsquash.jpg);
+    background-image: url(/Images/bgsquash.jpg);
   
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;
